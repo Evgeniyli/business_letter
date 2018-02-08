@@ -4,8 +4,8 @@ Feature: Business letter
   Scenario Outline: Send email from google account to the same account and check for received email
     Given I am on Google Search Page
     When  I am logging in Google with "<username>" username and "<password>" password
-    And navigate to Gmail
-    And I create and send an email to  "<receiverEmail>" with "<subject>" subject and the following text:
+    And   I navigate to Gmail
+    And   I create and send an email to  "<receiverEmail>" with "<subject>" subject and the following text:
   """
  Dear James 2017 BUSINESS CONFERENCE 10/11 DECEMBER 2017
  I have pleasure in inviting you to attend our special conference
@@ -15,7 +15,7 @@ Feature: Business letter
   """
     Then I should see the tooltip with "Письмо отправлено. Просмотреть сообщение" message
     When I search for inbox email with  subject and open it
-    Then  I should see the following email text:
+    Then I should see the following email text:
  """
  Dear James 2017 BUSINESS CONFERENCE 10/11 DECEMBER 2017
  I have pleasure in inviting you to attend our special conference
@@ -24,7 +24,7 @@ Feature: Business letter
  business productivity enable networking with business partners
   """
     Examples:
-      | username              | password | receiverEmail         | subject|
+      | username              | password | receiverEmail         | subject                        |
       | userJeck777@gmail.com | user2012 | userJeck777@gmail.com | Business letter for my partner |
 
 
