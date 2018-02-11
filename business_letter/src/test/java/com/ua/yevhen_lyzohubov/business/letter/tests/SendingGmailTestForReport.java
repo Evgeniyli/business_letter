@@ -26,7 +26,7 @@ public class SendingGmailTestForReport extends BaseTest {
         loginPage.enterEmailAndPasswordInTheField(gmail, password);
     }
 
-    @And("^navigate to Gmail$")
+    @And("^I navigate to Gmail$")
     public void navigateToGmail() throws Throwable {
         GoogleSearchPage homeGooglePage=new GoogleSearchPage(driver);
         homeGooglePage.clickOnGmail();
