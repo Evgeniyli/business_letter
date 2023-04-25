@@ -9,5 +9,4 @@ import org.junit.runner.RunWith;
         tags = "@sendingGmailTest")
 
 public class TestRunnerReceivingAndSendingGmail{
-
 }
