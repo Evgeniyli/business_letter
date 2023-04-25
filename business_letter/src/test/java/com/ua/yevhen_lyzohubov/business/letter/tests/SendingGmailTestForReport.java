@@ -14,7 +14,7 @@ import org.testng.Assert;
 public class SendingGmailTestForReport extends BaseTest {
 
     @Given("^I am on Google Search Page$")
-    public void iAmOnGoogleSearchPage() throws Throwable {
+    public void iAmOnGoogleSearchPage() {
         driver.get("https://www.google.com.ua/");
     }
 
